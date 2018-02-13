@@ -11,7 +11,7 @@ Below is the full list of supported annotation keys:
 | [ingress.appscode.com/session-cookie-name](sticky-session.md) | string | `SERVERID` |
 | [ingress.appscode.com/hsts](hsts.md) | bool | true |
 | [ingress.appscode.com/hsts-include-subdomains](hsts.md) | bool | false |
-| [ingress.appscode.com/hsts-max-age](hsts.md) | string | 15768000 |
+| [ingress.appscode.com/hsts-max-age](hsts.md) | string | `15768000` |
 | [ingress.appscode.com/hsts-preload](hsts.md) | bool | false |
 
 ingress.appscode.com/annotations-pod

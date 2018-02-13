@@ -6,7 +6,15 @@ HTTPS connections, and never via the insecure HTTP protocol. HSTS is an IETF sta
 The HSTS Policy is communicated by the server to the user agent via an HTTPS response header field named "Strict-Transport-Security".
 HSTS Policy specifies a period of time during which the user agent should only access the server in a secure fashion.
 
-Voyager can insert HSTS headers in http response if configured via ingress annotations.
+Voyager can insert HSTS headers in http response if configured via following ingress annotations:
+
+- `ingress.appscode.com/hsts`: If `false` disables HSTS. By default HSTS is enabled.
+- `ingress.appscode.com/hsts-preload`: If `true` enables HSTS preload.
+- `ingress.appscode.com/hsts-include-subdomains`: If `true` HSTS rule applies to all of the site's sub domains.
+- `ingress.appscode.com/hsts-max-age`:
+Specifies the time (in seconds) the browser should connect to the server using the HTTPS connection.
+You can also specify time with units such as "300ms", "-1.5h" or "2h45m". Valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h".
+Default value is `15768000` (6 months).
 
 ### Ingress example
 
