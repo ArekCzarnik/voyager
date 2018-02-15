@@ -18,7 +18,7 @@ Below is the full list of supported annotation keys:
 | [ingress.appscode.com/cors-allow-methods](cors.md) | string | `GET,PUT,POST,DELETE,PATCH,OPTIONS` |
 | [ingress.appscode.com/cors-allow-origin](cors.md) | string | `*` |
 | [ingress.appscode.com/default-option](default-options.md) | map | `{"http-server-close": "true", "dontlognull": "true"}` |
-| [ingress.appscode.com/default-timeout](default-timeout.md) | map | `{"connect": "50s", "server": "50s", "client": "50s", "client-fin": "50s", "tunnel": "50s"}` |
+| [ingress.appscode.com/default-timeout](default-timeouts.md) | map | `{"connect": "50s", "server": "50s", "client": "50s", "client-fin": "50s", "tunnel": "50s"}` |
 
 ingress.appscode.com/annotations-pod
 ingress.appscode.com/annotations-service
