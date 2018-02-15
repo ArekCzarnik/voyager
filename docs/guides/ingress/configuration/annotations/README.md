@@ -4,16 +4,16 @@ Below is the full list of supported annotation keys:
 
 |  Keys  |   Value   |  Default |
 |--------|-----------|----------|
-| [ingress.appscode.com/accept-proxy](accept-proxy.md) | bool | false |
+| [ingress.appscode.com/accept-proxy](accept-proxy.md) | bool | `false` |
 | [ingress.appscode.com/affinity](sticky-session.md) | `cookie` | |
 | [ingress.appscode.com/session-cookie-hash](sticky-session.md) | string | |
 | [ingress.appscode.com/session-cookie-name](sticky-session.md) | string | `SERVERID` |
-| [ingress.appscode.com/hsts](hsts.md) | bool | true |
-| [ingress.appscode.com/hsts-include-subdomains](hsts.md) | bool | false |
+| [ingress.appscode.com/hsts](hsts.md) | bool | `true` |
+| [ingress.appscode.com/hsts-include-subdomains](hsts.md) | bool | `false` |
 | [ingress.appscode.com/hsts-max-age](hsts.md) | string | `15768000` |
-| [ingress.appscode.com/hsts-preload](hsts.md) | bool | false |
-| [ingress.appscode.com/use-node-port]() | bool | false |
-| [ingress.appscode.com/enable-cors](cors.md) | bool | false |
+| [ingress.appscode.com/hsts-preload](hsts.md) | bool | `false` |
+| [ingress.appscode.com/use-node-port]() | bool | `false` |
+| [ingress.appscode.com/enable-cors](cors.md) | bool | `false` |
 | [ingress.appscode.com/cors-allow-headers](cors.md) | string | `DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization` |
 | [ingress.appscode.com/cors-allow-methods](cors.md) | string | `GET,PUT,POST,DELETE,PATCH,OPTIONS` |
 | [ingress.appscode.com/cors-allow-origin](cors.md) | string | `*` |
