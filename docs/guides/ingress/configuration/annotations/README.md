@@ -13,6 +13,10 @@ Below is the full list of supported annotation keys:
 | [ingress.appscode.com/hsts-max-age](hsts.md) | string | `15768000` |
 | [ingress.appscode.com/hsts-preload](hsts.md) | bool | false |
 | [ingress.appscode.com/use-node-port]() | bool | false |
+| [ingress.appscode.com/enable-cors](cors.md) | bool | false |
+| [ingress.appscode.com/cors-allow-headers](cors.md) | string | `DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization` |
+| [ingress.appscode.com/cors-allow-methods](cors.md) | string | `GET,PUT,POST,DELETE,PATCH,OPTIONS` |
+| [ingress.appscode.com/cors-allow-origin](cors.md) | string | `*` |
 
 ingress.appscode.com/annotations-pod
 ingress.appscode.com/annotations-service
@@ -29,7 +33,6 @@ ingress.appscode.com/cors-allow-origin
 ingress.appscode.com/daemon.nodeSelector
 ingress.appscode.com/default-option
 ingress.appscode.com/default-timeout
-ingress.appscode.com/enable-cors
 ingress.appscode.com/errorfiles
 ingress.appscode.com/force-ssl-redirect
 ingress.appscode.com/keep-source-ip
