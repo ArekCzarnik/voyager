@@ -13,7 +13,7 @@ section_menu_id: guides
 
 # CORS
 
-Voyager can enable and configure CORS for all HTTP Frontend via following ingress annotations:
+Voyager can enable and configure CORS for all HTTP frontends via following ingress annotations:
 - `ingress.appscode.com/enable-cors`: If set to `true` enables CORS for all HTTP Frontend. By default CORS is disabled.
 - `ingress.appscode.com/cors-allow-headers`: Specifies allowed headers when CORS enabled. Default value is `DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization`.
 - `ingress.appscode.com/cors-allow-methods`: Specifies allowed methods when CORS enabled. Default value is `GET,PUT,POST,DELETE,PATCH,OPTIONS`.
