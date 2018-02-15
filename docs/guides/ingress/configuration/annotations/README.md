@@ -6,13 +6,13 @@ Below is the full list of supported annotation keys:
 |--------|-----------|----------|
 | [ingress.appscode.com/accept-proxy](accept-proxy.md) | bool | false |
 | [ingress.appscode.com/affinity](sticky-session.md) | `cookie` | |
-| [ingress.appscode.com/sticky-session](sticky-session.md) | bool | false |
 | [ingress.appscode.com/session-cookie-hash](sticky-session.md) | string | |
 | [ingress.appscode.com/session-cookie-name](sticky-session.md) | string | `SERVERID` |
 | [ingress.appscode.com/hsts](hsts.md) | bool | true |
 | [ingress.appscode.com/hsts-include-subdomains](hsts.md) | bool | false |
 | [ingress.appscode.com/hsts-max-age](hsts.md) | string | `15768000` |
 | [ingress.appscode.com/hsts-preload](hsts.md) | bool | false |
+| [ingress.appscode.com/use-node-port]() | bool | false |
 
 ingress.appscode.com/annotations-pod
 ingress.appscode.com/annotations-service
@@ -31,7 +31,6 @@ ingress.appscode.com/default-option
 ingress.appscode.com/default-timeout
 ingress.appscode.com/enable-cors
 ingress.appscode.com/errorfiles
-ingress.appscode.com/force-service-port
 ingress.appscode.com/force-ssl-redirect
 ingress.appscode.com/keep-source-ip
 ingress.appscode.com/limit-connection
