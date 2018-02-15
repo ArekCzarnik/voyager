@@ -25,6 +25,7 @@ Below is the full list of supported annotation keys:
 | [ingress.appscode.com/auth-tls-error-page](/docs/guides/ingress/security/tls-auth.md) | string | |
 | [ingress.appscode.com/auth-tls-secret](/docs/guides/ingress/security/tls-auth.md) | string | |
 | [ingress.appscode.com/auth-tls-verify-client](/docs/guides/ingress/security/tls-auth.md) | `required` or, `optional` | `required` |
+| [ingress.appscode.com/backend-tls](/docs/guides/ingress/tls/backend-tls.md) | string | |
 
 ## TODO @ Dipta
 
