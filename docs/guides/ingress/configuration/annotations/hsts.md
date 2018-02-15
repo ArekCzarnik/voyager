@@ -15,7 +15,7 @@ Voyager can insert HSTS headers in http response if configured via following ing
 You can also specify time with units such as "300ms", "-1.5h" or "2h45m". Valid time units are "ns", "us" (or "µs"), "ms", "s", "m", "h".
 Default value is `15768000` (6 months).
 
-### Ingress example
+## Ingress example
 
 First create a test-server and expose it via service:
 

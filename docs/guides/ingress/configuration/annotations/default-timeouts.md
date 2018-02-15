@@ -95,7 +95,8 @@ If any required timeouts is not provided timeouts will be populated with the fol
 	timeout  tunnel          50s
 ```
 
-### Time Format
+## Time Format
+
 These timeout values are generally expressed in milliseconds (unless explicitly stated
 otherwise) but may be expressed in any other unit by suffixing the unit to the
 numeric value. It is important to consider this because it will not be repeated

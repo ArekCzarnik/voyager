@@ -3,7 +3,7 @@
 If set to `true`, enforces the use of the PROXY protocol over any connection accepted by HAProxy.
 It will add the `accept-proxy` keyword on the `bind` line of the generated `haproxy.cfg`.
 
-### Ingress Example
+## Ingress Example
 
 First create a test-server and expose it via service:
 
