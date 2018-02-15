@@ -17,6 +17,8 @@ Below is the full list of supported annotation keys:
 | [ingress.appscode.com/cors-allow-headers](cors.md) | string | `DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization` |
 | [ingress.appscode.com/cors-allow-methods](cors.md) | string | `GET,PUT,POST,DELETE,PATCH,OPTIONS` |
 | [ingress.appscode.com/cors-allow-origin](cors.md) | string | `*` |
+| [ingress.appscode.com/default-option](default-options.md) | map | `{"http-server-close": "true", "dontlognull": "true"}` |
+
 
 ingress.appscode.com/annotations-pod
 ingress.appscode.com/annotations-service
