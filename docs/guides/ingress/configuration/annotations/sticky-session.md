@@ -2,11 +2,11 @@
 Voyager 3.2.0+ can configure [sticky connections](https://www.haproxy.com/blog/load-balancing-affinity-persistence-sticky-sessions-what-you-need-to-know/) in 2 modes. By applying annotation to an Ingress resource, you can configure all backends in that ingress to use sticky session. Or you can apply annotation to a service and configure
 backends using that service to use sticky session.
 
-`ingress.appscode.com/sticky-session` annotations is deprecated in voyager 4.0.0+. Use `ingress.kubernetes.io/affinity` instead.
+`ingress.appscode.com/sticky-session` annotations is deprecated in voyager 4.0.0+ and removed in 6.0.0+. Use `ingress.kubernetes.io/affinity` instead.
 
 ### Sticky Ingress
-Applying annotation `ingress.kubernetes.io/affinity` to Ingress will configure all backends to
-support sticky session.
+Applying annotation `ingress.kubernetes.io/affinity` to Ingress will configure all backends to support sticky session.
+
 ```yaml
 apiVersion: voyager.appscode.com/v1beta1
 kind: Ingress
