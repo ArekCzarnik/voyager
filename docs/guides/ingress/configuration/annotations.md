@@ -22,6 +22,9 @@ Below is the full list of supported annotation keys:
 | [ingress.appscode.com/auth-type](/docs/guides/ingress/security/basic-auth.md) | `basic` | |
 | [ingress.appscode.com/auth-realm](/docs/guides/ingress/security/basic-auth.md) | string | |
 | [ingress.appscode.com/auth-secret](/docs/guides/ingress/security/basic-auth.md) | string | |
+| [ingress.appscode.com/auth-tls-error-page](/docs/guides/ingress/security/tls-auth.md) | string | |
+| [ingress.appscode.com/auth-tls-secret](/docs/guides/ingress/security/tls-auth.md) | string | |
+| [ingress.appscode.com/auth-tls-verify-client](/docs/guides/ingress/security/tls-auth.md) | `required` or, `optional` | `required` |
 
 ## TODO @ Dipta
 
@@ -30,9 +33,6 @@ Below is the full list of supported annotation keys:
 | [ingress.appscode.com/annotations-pod]() | | |
 | [ingress.appscode.com/annotations-service]() | | |
 | [ingress.appscode.com/api-schema]() | | |
-| [ingress.appscode.com/auth-tls-error-page]() | | |
-| [ingress.appscode.com/auth-tls-secret]() | | |
-| [ingress.appscode.com/auth-tls-verify-client]() | | |
 | [ingress.appscode.com/daemon.nodeSelector]() | | |
 | [ingress.appscode.com/errorfiles]() | | |
 | [ingress.appscode.com/force-ssl-redirect]() | | |
