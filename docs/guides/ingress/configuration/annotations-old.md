@@ -113,7 +113,7 @@ Voyager supports applying specified annotations in ingress or in backend service
 configuration will be applied on all backend of the ingress, if applied to service configurations will only apply on those backends.
 
 ## Ingress Annotations
-All following annotations are assumed to be prefixed with `ingress.kubernetes.io/`.
+All following annotations are assumed to be prefixed with `ingress.appscode.com/`.
 Voyager also supports some particular defines annotation, [which are described here](#voyager-annotations).
 
 | Name | Details | Annotation applies to |

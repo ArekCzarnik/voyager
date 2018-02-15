@@ -26,9 +26,9 @@ Before diving into the deep learn about TLS Auth with HAproxy.
 
 Voyager Ingress read ca certificates from files stored on secrets with `ca.crt` key.
 
-* `ingress.kubernetes.io/auth-tls-secret`: Name of secret for TLS client certification validation.
-* `ingress.kubernetes.io/auth-tls-error-page`: The page that user should be redirected in case of Auth error
-* `ingress.kubernetes.io/auth-tls-verify-client`: Enables verification option of client certificates.
+* `ingress.appscode.com/auth-tls-secret`: Name of secret for TLS client certification validation.
+* `ingress.appscode.com/auth-tls-error-page`: The page that user should be redirected in case of Auth error
+* `ingress.appscode.com/auth-tls-verify-client`: Enables verification option of client certificates.
 
 ### Configure
 
@@ -51,9 +51,9 @@ apiVersion: voyager.appscode.com/v1beta1
 kind: Ingress
 metadata:
   annotations:
-    ingress.kubernetes.io/auth-tls-secret: ca
-    ingress.kubernetes.io/auth-tls-verify-client: required
-    ingress.kubernetes.io/auth-tls-error-page: "https://auth.example.com/errors.html"
+    ingress.appscode.com/auth-tls-secret: ca
+    ingress.appscode.com/auth-tls-verify-client: required
+    ingress.appscode.com/auth-tls-error-page: "https://auth.example.com/errors.html"
   name: hello-tls-auth
   namespace: default
 spec:
