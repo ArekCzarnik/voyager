@@ -47,7 +47,6 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 9376
-
 ```
 
 ```yaml
